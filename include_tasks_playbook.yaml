@@ -1,0 +1,7 @@
+-
+ hosts: nodes
+ tasks:
+   - name: play1-task1
+     debug:
+       msg: play1-task1
+   - include_tasks: play1_task2.yaml

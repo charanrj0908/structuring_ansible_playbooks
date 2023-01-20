@@ -1,0 +1,14 @@
+---
+# tasks file for nginx
+
+- name : set fact
+  set_fact :
+
+    our_fact : Ansible rocks!!
+
+
+- name : show our_fact
+  debug:
+    msg: "{{our_fact}}"
+
+

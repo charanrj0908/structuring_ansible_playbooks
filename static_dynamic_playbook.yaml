@@ -1,0 +1,22 @@
+-
+ hosts: node1
+ tasks:
+   - name: testing include_tasks
+     debug:
+       msg: first-task
+   - include_tasks: include_playbook.yaml
+     when: include_playbook_var is not defined
+     tags:
+       - include
+
+   
+   - name: testing import_tasks
+     debug:
+       msg: first-task
+   - import_tasks: import_playbook.yaml
+     when: import_playbook_var is not defined
+     tags:
+       - import
+
+
+     

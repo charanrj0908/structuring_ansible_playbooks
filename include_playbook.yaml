@@ -1,0 +1,11 @@
+- set_fact:
+  
+   include_playbook_var: something
+
+- name: task1
+  debug:
+    msg: task1
+
+- name: task2
+  debug:
+    msg: task2
